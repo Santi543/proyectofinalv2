@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <!-- link bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- link css -->
   <link rel="stylesheet" href="styles/styles.css">
 
@@ -16,9 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
-  <!-- link bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
   <!-- mapbox -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet">
 </head>
@@ -114,7 +115,54 @@
 
 
     </div>
-    <div class="cards">
+    <div class="contenedorDescuentos">
+      <p class="anuncioDescuentos" style="font-size: 42px;">APROVECHA ESTOS DESCUENTOS IMPERDIBLES!</p>
+      <div class="seccionDescuento">
+        <div class="descuentoUno">
+          <img src="../imagenes/silla6.jpg" alt="" class="descuentoImagen">
+          <div class="descuentoColumn">
+            <p class="tituloDescuentos">SILLA AZUL</p>
+
+            <div class="productInfo">
+              <p class="descuentoPrecio">$250</p>
+            </div>
+            <div class="productInfo">
+              <button type="button" class="btn btn-outline-danger">VER PRODUCTO</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="descuentoDos">
+          <img src="../imagenes/mueble1.jpg" alt="" class="descuentoImagen">
+          <div class="descuentoColumn">
+            <p class="tituloDescuentos">CAJONERA</p>
+            <div class="productInfo">
+              <p class="descuentoPrecio">$250</p>
+            </div>
+            <div class="productInfo">
+              <button type="button" class="btn btn-outline-danger">VER PRODUCTO</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="descuentoTres">
+          <img src="../imagenes/placardBlanco.jpg" alt="" class="descuentoImagen">
+          <div class="descuentoColumn">
+            <p class="tituloDescuentos">PLACARD</p>
+            <div class="productInfo">
+              <p class="descuentoPrecio">$250</p>
+
+            </div>
+            <div class="productInfo">
+              <button type="button" class="btn btn-outline-danger">VER PRODUCTO</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="cards">
       <div class="card" style="max-width: 480px;">
         <div class="row g-0">
           <div class="col-md-4">
@@ -122,9 +170,9 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title" style="color: rgb(212, 49, 49);">50% DE DESCUENTO</h5>
-              <p class="card-text">SILLA ROJA</p>
-              
+              <h5 class="card-title tituloDescuentos">50% DE DESCUENTO</h5>
+              <p class="card-text textoDescuentos">SILLA ROJA</p>
+              <button>Ir a ver!</button>
             </div>
           </div>
         </div>
@@ -138,9 +186,9 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title" style="color: rgb(212, 49, 49);">50% DE DESCUENTO</h5>
-              <p class="card-text">CAJONERA</p>
-              
+              <h5 class="card-title tituloDescuentos">50% DE DESCUENTO</h5>
+              <p class="card-text textoDescuentos">CAJONERA</p>
+
             </div>
           </div>
         </div>
@@ -153,18 +201,20 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title" style="color: rgb(212, 49, 49);">50% DE DESCUENTO</h5>
-              <p class="card-text">SILLON AZUL</p>
-  
+              <h5 class="card-title tituloDescuentos">50% DE DESCUENTO</h5>
+              <p class="card-text textoDescuentos">SILLON AZUL</p>
+
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- fin del carousel -->
     <div class="zonaCercana">
-      <h2 style="margin-bottom: 0%; color: white; font-family: 'Roboto', sans-serif; margin-left: 40px; font-size: 42px;">Encontranos en tu zona mas cercana</h2>
-    <div id="map"></div>
+      <h2
+        style="margin-bottom: 0%; color: white; font-family: 'Roboto', sans-serif; margin-left: 40px; font-size: 42px;">
+        Encontranos en tu zona mas cercana</h2>
+      <div id="map"></div>
     </div>
 
     <!-- inicio footer -->
@@ -190,30 +240,31 @@
     <!-- fin del footer -->
   </div>
 
+  <!-- link bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="nav.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2FudGk1NDMiLCJhIjoiY2w1ZDBjM2V5MGJvdDNsbXBpNnBnOXQ3ZCJ9.uLySn13s7DMgRKmn869WmQ';
+    const map = new mapboxgl.Map({
+      container: 'map', // container ID
+      style: 'mapbox://styles/mapbox/streets-v11', // style URL
+      center: [-58.391490, -34.599517], // starting position [lng, lat]
+      zoom: 9, // starting zoom
+      projection: 'globe' // display the map as a 3D globe
+    });
+
+    map.on('style.load', () => {
+      map.setFog({}); // Set the default atmosphere style
+    });
+
+    // Create a default Marker and add it to the map.
+    const marker1 = new mapboxgl.Marker()
+      .setLngLat([-58.391490, -34.599517])
+      .addTo(map);
+  </script>
 </body>
-<!-- link bootstrap js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="nav.js"></script>
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
-<script>
-  mapboxgl.accessToken = 'pk.eyJ1Ijoic2FudGk1NDMiLCJhIjoiY2w1ZDBjM2V5MGJvdDNsbXBpNnBnOXQ3ZCJ9.uLySn13s7DMgRKmn869WmQ';
-  const map = new mapboxgl.Map({
-    container: 'map', // container ID
-    style: 'mapbox://styles/mapbox/streets-v11', // style URL
-    center: [-58.391490, -34.599517], // starting position [lng, lat]
-    zoom: 9, // starting zoom
-    projection: 'globe' // display the map as a 3D globe
-  });
-
-  map.on('style.load', () => {
-    map.setFog({}); // Set the default atmosphere style
-  });
-
-  // Create a default Marker and add it to the map.
-  const marker1 = new mapboxgl.Marker()
-    .setLngLat([-58.391490, -34.599517])
-    .addTo(map);
-</script>
 
 </html>

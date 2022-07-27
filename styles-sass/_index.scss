@@ -1,0 +1,78 @@
+/*index*/
+.menuMobile {
+    padding: 0%;
+    margin-left: 5px;
+    li {
+        margin-bottom: 15px;
+        a {
+            text-decoration: none;
+            font-family: 'Roboto Condensed', sans-serif;
+            color: black;}
+        }
+}
+
+.menuNav {
+    display: none;
+    filter: invert(100%);
+    cursor: pointer;
+    margin-right: 13px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    background-color: white;
+    border: black solid 1px;
+    z-index: 10;
+    height: 300px;
+    align-items: center;
+    width: 120px;
+}
+
+.homeHeader {
+    grid-area: header;
+}
+
+.cuerpoHome {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto 8%;
+    grid-template-areas: "header""carousel""cards""zona""footer";
+    background-color: white;
+}
+
+.zonaCercana {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: zona;
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    margin-top: 150px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: cards;
+    margin-top: 10px;
+    height: 210px;
+}
+
+#bienvenida {
+    display: flex;
+    justify-content: center;
+    grid-area: carousel;
+}
+
+.row {
+    justify-content: center;
+}
+
+.row>* {
+    padding: 0% !important;
+}

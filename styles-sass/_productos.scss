@@ -1,0 +1,240 @@
+/*productos*/
+
+.categorias {
+    margin-top: 20px;
+    h2 {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  }
+  
+  .cuerpoProductos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 80px;
+    grid-template-areas: "header""main""footer";
+  }
+  
+  .estilo {
+    color: #949191;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .svg-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .menuLateral {
+    display: flex;
+    flex-direction: column;
+    grid-area: menuIzq;
+    height: 80%;
+    border-right: 1px solid lightgray;
+    font-family: 'Raleway', sans-serif;
+    min-width: 18%;
+    li a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  
+  ul,
+  li {
+    list-style: none;
+  }
+  
+  .lateral {
+    padding: 0%;
+  }
+  
+  #productos {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto auto;
+    column-gap: 100px;
+    grid-template-areas: "menuIzq productosGrid""menuIzq productosGrid";
+    grid-area: main;
+    justify-content: center;
+  }
+  
+  .contenedorProductos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-area: productosGrid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .productoUno img:hover {
+    transform: scaleX(-1);
+    transition-duration: 0.7s;
+  }
+  
+  .productoDos img:hover {
+    content: url(../imagenes/muebleAbierto.jpg);
+    transform: scaleX(-1);
+    transition-duration: 0.7s;
+  }
+  
+  .productoTres img:hover {
+    content: url(../imagenes/placardBlanco2.jpg);
+    transform: scaleX(-1);
+    transition-duration: 0.7s;
+  }
+  
+  .productoCuatro img:hover {
+    content: url(../imagenes/sillon2.jpg);
+    transform: scaleX(-1);
+    transition-duration: 0.7s;
+  }
+  
+  .productoCinco img:hover {
+    content: url(../imagenes/sillaroja2.jpg);
+    transform: scaleX(-1);
+    transition-duration: 0.7s;
+  }
+  
+  .productoSeis img:hover {
+    content: url(../imagenes/bajomesada2.jpg);
+    transform: scaleX(-1);
+    transition-duration: 0.7s;
+  }
+  
+  .productoUno {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px lightgray solid;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+  
+  .productoDos {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px lightgray solid;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+  
+  .productoTres {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px lightgray solid;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+  
+  .productoCuatro {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px lightgray solid;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+  
+  .productoCinco {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px lightgray solid;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+  
+  .productoSeis {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px lightgray solid;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+  }
+  
+  .imagenproducto {
+    width: 280px;
+    height: 200px;
+  }
+  
+  .productInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+  }
+  
+  .elBoton {
+    background-color: #8a4242;
+    color: white;
+    width: 80px;
+    height: 50px;
+  }
+  
+  .numeritos {
+    width: 90px;
+    height: 44px;
+  }
+  
+  .botonCategorias {
+    display: none;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+  
+    &:hover {
+      border: 2px solid #b81010;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.4s;
+    }
+  }
+  
+  .menuJs {
+    flex-direction: column;
+    border: 1px solid black;
+    width: fit-content;
+    grid-area: desplegable;
+    width: 359px;
+  }
+  
+  .precio {
+    font-weight: bold;
+    font-size: 20px;
+  }
