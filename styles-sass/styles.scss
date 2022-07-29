@@ -7,6 +7,7 @@
   display:flex;
   flex-direction:column;
   justify-content:space-around;
+  align-items: center;
 }
 /* variables y mapas*/
 $producto:(
@@ -134,6 +135,10 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 400px;
   width: 100%;}
 
+.tituloCercana{
+  font-size: 42px;
+}
+
 /* responsive media */
 
 @media (max-width: 1120px) {
@@ -227,8 +232,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (max-width: 1090px) {
   .barraNavegacion li {
-    width: fit-content;
-    margin-right: 40px;}
+    width: 140px;}
 }
 
 @media (max-width: 860px) {
@@ -285,12 +289,13 @@ input[type="number"]::-webkit-inner-spin-button {
   grid-template-areas: "texto" "seccion";
   width: 100%;
   justify-items: center;
+  align-items: center;
 }
 
 .descuentoUno{
   @extend .productoUno;
   flex-direction: row;
-  height: 200px;
+  height: 225px;
   border: gray 1px solid;
   width: 100%;
   justify-content: space-around;
@@ -299,7 +304,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .descuentoDos{
   @extend .productoDos;
   flex-direction: row;
-  height: 200px;
+  height: 225px;
   border: gray 1px solid;
   width: 100%;
   justify-content: space-around;
@@ -308,7 +313,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .descuentoTres{
   @extend .productoTres;
   flex-direction: row;
-  height: 200px;
+  height: 225px;
   border: gray 1px solid;
   width: 100%;
   justify-content: space-around;
@@ -338,12 +343,149 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-.anuncionDescuentos{
+.anuncioDescuentos{
   grid-area: texto;
+  font-size: 42px;
 }
 
 .seccionDescuento{
   grid-area: seccion;
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 1015px){
+  .anuncioDescuentos{
+    font-size: 38px;
+  }
+  .seccionDescuento{
+    height: 80%;
+  }
+  .descuentoUno{
+    width: 80%;
+    height: 200px;
+  }
+  .descuentoDos{
+    width: 80%;
+    height: 200px;
+  }
+  .descuentoTres{
+    height: 200px;
+  }
+  .tituloDescuentos{
+    font-size: 20px;
+  }
+  .btn{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 925px){
+  .anuncioDescuentos{
+    font-size: 32px;
+  }
+  .seccionDescuento{
+    height: 60%;
+  }
+  .descuentoUno{
+    width: 60%;
+    height: 150px;
+    margin: 0%;
+  }
+  .descuentoDos{
+    width: 60%;
+    height: 150px;
+    margin: 0%;
+  }
+  .descuentoTres{
+    width: 60%;
+    height: 150px;
+    margin: 0%;
+  }
+  .tituloDescuentos{
+    font-size: 18px;
+  }
+  .btn{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px){
+  .anuncioDescuentos{
+    font-size: 26px;
+  }
+  .seccionDescuento{
+    height: 40%;
+  }
+  .descuentoUno{
+    width: 40%;
+    height: 120px;
+    margin: 0%;
+  }
+  .descuentoDos{
+    width: 40%;
+    height: 120px;
+    margin: 0%;
+  }
+  .descuentoTres{
+    width: 40%;
+    height: 120px;
+    margin: 0%;
+  }
+  .tituloDescuentos{
+    font-size: 12px;
+  }
+  .btn{
+    font-size: 9px;
+  }
+  .descuentoImagen{
+    width: 75px;
+    height: 75px;
+  }
+  .descuentoPrecio{
+    font-size: 14px;
+  }
+  .tituloCercana{
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px){
+  .anuncioDescuentos{
+    font-size: 22px;
+  }
+  .seccionDescuento{
+    height: 40%;
+  }
+  .descuentoUno{
+    width: 30%;
+    height: 120px;
+    margin: 0%;
+  }
+  .descuentoDos{
+    width: 30%;
+    height: 120px;
+    margin: 0%;
+  }
+  .descuentoTres{
+    width: 30%;
+    height: 120px;
+    margin: 0%;
+  }
+  .tituloDescuentos{
+    font-size: 10px;
+  }
+  .btn{
+    font-size: 7px;
+  }
+  .descuentoImagen{
+    width: 70px;
+    height: 70px;
+  }
+  .descuentoPrecio{
+    font-size: 12px;
+  }
+  .tituloCercana{
+    font-size: 26px;
+  }
 }
