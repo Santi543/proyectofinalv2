@@ -1,9 +1,15 @@
 /*quienes somos*/
+@-webkit-keyframes aparicion {
+  0% {opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
 .textoSomos {
     max-height: 500px;
   }
   
-  .cuerpoSomos {
+.cuerpoSomos {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
@@ -34,7 +40,7 @@
      p {
       margin-bottom: 60px;
       margin-right: 80px;
-      width: 30%;
+      width: 40%;
     }
   
      img {
@@ -53,23 +59,25 @@
   }
   
   .quienSoy_P {
-    font-size: 50px;
     color: azure;
-    margin-top: 200px;
     font-family: 'Tai Heritage Pro', serif;
     font-style: italic;
+    width: 70%;
+    margin-top: 150px;
+    margin-left: 100px;
   }
   
   .contenedorQuienesSomos {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 500px;
+    justify-content: flex-start;
+    height: 588px;
     width: 100%;
     background-image: url(../imagenes/carpintero.jpg);
     background-size: cover;
     grid-area: mainSomos;
     margin-bottom: 80px;
+    animation: aparicion 2s ease-in normal;
   }
   
   .imagenSomos {
@@ -97,6 +105,6 @@
   
      p {
       margin-bottom: 60px;
-      width: 30%;
+      width: 40%;
     }
 }

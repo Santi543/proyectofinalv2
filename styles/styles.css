@@ -66,6 +66,12 @@
 .row > * {
   padding: 0% !important; }
 
+.tituloCercana {
+  margin-bottom: 0%;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 40px; }
+
 /*ayuda*/
 .mainAyuda {
   grid-area: mainAyuda; }
@@ -159,8 +165,7 @@
     margin-bottom: 30px; }
 
 .preguntitas {
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px; }
+  font-family: 'Roboto', sans-serif; }
 
 /*contacto*/
 @media (max-width: 550px) {
@@ -199,9 +204,14 @@
   color: white;
   max-width: 300px; }
 
+.form-label {
+  color: white; }
+
 /*productos*/
 .categorias {
   margin-top: 20px; }
+  .categorias h1 {
+    margin-bottom: 45px; }
   .categorias h2 {
     font-weight: bold;
     font-size: 24px; }
@@ -229,7 +239,13 @@
 .inputs {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  width: 220px; }
+  .inputs label input {
+    max-width: 75px; }
+
+.lateralJs {
+  width: 80%; }
 
 .menuLateral {
   display: flex;
@@ -238,7 +254,8 @@
   height: 80%;
   border-right: 1px solid lightgray;
   font-family: 'Raleway', sans-serif;
-  min-width: 18%; }
+  min-width: 18%;
+  width: 80%; }
   .menuLateral li a {
     text-decoration: none;
     color: black; }
@@ -269,36 +286,37 @@ li {
   justify-content: center;
   margin-top: 30px; }
 
-.productoUno img:hover, .descuentoUno img:hover {
-  transform: scaleX(-1);
+.productoUno img:hover {
+  transform: scale(1, 1);
+  transform: scale(1.3, 1.3);
   transition-duration: 0.7s; }
 
-.productoDos img:hover, .descuentoDos img:hover {
-  content: url(../imagenes/muebleAbierto.jpg);
-  transform: scaleX(-1);
+.productoDos img:hover {
+  transform: scale(1, 1);
+  transform: scale(1.3, 1.3);
   transition-duration: 0.7s; }
 
-.productoTres img:hover, .descuentoTres img:hover {
-  content: url(../imagenes/placardBlanco2.jpg);
-  transform: scaleX(-1);
+.productoTres img:hover {
+  transform: scale(1, 1);
+  transform: scale(1.3, 1.3);
   transition-duration: 0.7s; }
 
 .productoCuatro img:hover {
-  content: url(../imagenes/sillon2.jpg);
-  transform: scaleX(-1);
+  transform: scale(1, 1);
+  transform: scale(1.3, 1.3);
   transition-duration: 0.7s; }
 
 .productoCinco img:hover {
-  content: url(../imagenes/sillaroja2.jpg);
-  transform: scaleX(-1);
+  transform: scale(1, 1);
+  transform: scale(1.3, 1.3);
   transition-duration: 0.7s; }
 
 .productoSeis img:hover {
-  content: url(../imagenes/bajomesada2.jpg);
-  transform: scaleX(-1);
+  transform: scale(1, 1);
+  transform: scale(1.3, 1.3);
   transition-duration: 0.7s; }
 
-.productoUno, .descuentoUno {
+.productoUno {
   display: flex;
   flex-direction: column;
   max-width: 320px;
@@ -309,7 +327,7 @@ li {
   margin-bottom: 40px;
   margin-right: 40px; }
 
-.productoDos, .descuentoDos {
+.productoDos {
   display: flex;
   flex-direction: column;
   max-width: 320px;
@@ -320,7 +338,7 @@ li {
   margin-bottom: 40px;
   margin-right: 40px; }
 
-.productoTres, .descuentoTres {
+.productoTres {
   display: flex;
   flex-direction: column;
   max-width: 320px;
@@ -365,7 +383,7 @@ li {
   margin-right: 40px; }
 
 .imagenproducto {
-  width: 280px;
+  width: 200px;
   height: 200px; }
 
 .productInfo {
@@ -400,13 +418,25 @@ li {
   border: 1px solid black;
   width: fit-content;
   grid-area: desplegable;
-  width: 359px; }
+  width: 359px;
+  padding: 30px; }
 
 .precio {
   font-weight: bold;
   font-size: 20px; }
 
+.texto {
+  margin-top: 23px; }
+
 /*quienes somos*/
+@-webkit-keyframes aparicion {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
 .textoSomos {
   max-height: 500px; }
 
@@ -438,7 +468,7 @@ li {
   .somosRow2 p {
     margin-bottom: 60px;
     margin-right: 80px;
-    width: 30%; }
+    width: 40%; }
   .somosRow2 img {
     border: 2px lightgray;
     height: 100%; }
@@ -451,22 +481,24 @@ li {
   width: 100%; }
 
 .quienSoy_P {
-  font-size: 50px;
   color: azure;
-  margin-top: 200px;
   font-family: 'Tai Heritage Pro', serif;
-  font-style: italic; }
+  font-style: italic;
+  width: 70%;
+  margin-top: 150px;
+  margin-left: 100px; }
 
 .contenedorQuienesSomos {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 500px;
+  justify-content: flex-start;
+  height: 588px;
   width: 100%;
   background-image: url(../imagenes/carpintero.jpg);
   background-size: cover;
   grid-area: mainSomos;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  animation: aparicion 2s ease-in normal; }
 
 .imagenSomos {
   width: 25%;
@@ -489,7 +521,7 @@ li {
     height: 100%; }
   .somosRow p {
     margin-bottom: 60px;
-    width: 30%; }
+    width: 40%; }
 
 /* variables y mapas*/
 /* footer */
@@ -622,7 +654,20 @@ input[type="number"]::-webkit-inner-spin-button {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
     grid-template-areas: "menuJs" "desplegable" "productoJs";
-    row-gap: 30px; }
+    row-gap: 30px;
+    justify-items: center; }
+  .productoUno {
+    margin-right: 0px; }
+  .productoDos {
+    margin-right: 0px; }
+  .productoTres {
+    margin-right: 0px; }
+  .productoCuatro {
+    margin-right: 0px; }
+  .productoCinco {
+    margin-right: 0px; }
+  .productoSeis {
+    margin-right: 0px; }
   .contenedorProductos, .contenedorDescuentos {
     grid-area: productoJs; } }
 
@@ -630,37 +675,13 @@ input[type="number"]::-webkit-inner-spin-button {
   .menuJs {
     display: none !important; } }
 
-@media (max-width: 800px) {
-  .contenedorQuienesSomos {
-    margin-bottom: 0px; }
-  .somosRow {
-    flex-direction: column;
-    max-height: 900px; }
-  .imagenSomos {
-    margin: 0%; }
-  .somosRow p {
-    margin-bottom: 0%;
-    width: 70%; }
-  .somosRow img {
-    width: 50%;
-    height: 200px;
-    margin-bottom: 45px; }
-  .somosRow2 {
-    flex-direction: column;
-    max-height: 900px;
-    justify-content: center; }
-  .somosRow2 p {
-    margin-bottom: 0%;
-    width: 70%;
-    margin-right: 0%; }
-  .somosRow2 img {
-    width: 50%;
-    height: 200px;
-    margin-top: 45px; } }
+@media (max-width: 345px) {
+  .cardSomos {
+    height: 700px; } }
 
 @media (max-width: 1090px) {
   .barraNavegacion li {
-    width: 140px; } }
+    width: 100px; } }
 
 @media (max-width: 860px) {
   .barraNavegacion {
@@ -690,11 +711,12 @@ input[type="number"]::-webkit-inner-spin-button {
   color: rgba(134, 2, 2, 0.801); }
 
 .texto {
-  color: rgba(95, 18, 18, 0.699); }
+  color: rgba(0, 0, 0, 0.699); }
 
 .tituloDescuentos {
   color: rgba(134, 2, 2, 0.801);
-  font-size: 25px; }
+  font-size: 25px;
+  font-family: 'Roboto Condensed', sans-serif; }
 
 .textoDescuentos {
   color: #928b8bd0; }
@@ -702,42 +724,72 @@ input[type="number"]::-webkit-inner-spin-button {
 .contenedorDescuentos {
   flex-direction: row;
   grid-area: cards;
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
   grid-template-rows: auto auto;
   grid-template-areas: "texto" "seccion";
   width: 100%;
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  row-gap: 30px;
+  column-gap: 30px; }
 
 .descuentoUno {
+  display: flex;
+  max-width: 400px;
+  align-items: center;
+  text-align: center;
   flex-direction: row;
   height: 225px;
-  border: gray 1px solid;
+  border: rgba(0, 0, 0, 0.787) 2px solid;
   width: 100%;
-  justify-content: space-around; }
+  padding: 0;
+  justify-content: space-around;
+  margin-right: 40px; }
 
 .descuentoDos {
+  display: flex;
+  max-width: 400px;
+  align-items: center;
+  text-align: center;
   flex-direction: row;
   height: 225px;
-  border: gray 1px solid;
+  border: rgba(0, 0, 0, 0.787) 2px solid;
   width: 100%;
-  justify-content: space-around; }
+  padding: 0;
+  justify-content: space-around;
+  margin-right: 40px; }
 
 .descuentoTres {
+  display: flex;
+  max-width: 400px;
+  align-items: center;
+  text-align: center;
   flex-direction: row;
   height: 225px;
-  border: gray 1px solid;
+  border: rgba(0, 0, 0, 0.787) 2px solid;
   width: 100%;
-  justify-content: space-around; }
+  padding: 0;
+  justify-content: space-around;
+  margin-right: 40px; }
 
 .descuentoImagen {
-  height: 100px;
+  height: 140px;
   width: 100px;
   justify-content: start; }
 
-.descuentoPrecio {
+.descuentoPrecio, .precioFinal {
   font-size: 20px;
-  color: rgba(134, 2, 2, 0.801); }
+  color: rgba(134, 2, 2, 0.801);
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: line-through; }
+
+.preciosJuntos {
+  display: flex;
+  flex-direction: row; }
+
+.precioFinal {
+  margin-left: 7px;
+  text-decoration: none; }
 
 .descuentoColumn {
   display: flex;
@@ -745,116 +797,103 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: space-around;
   align-items: center; }
 
-.btn-outline-danger {
-  color: #842029;
-  border-color: #842029; }
-  .btn-outline-danger:hover {
-    background-color: #842029;
-    border-color: #842029; }
+.productoDescuentoContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between; }
+
+.productHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 20px 0px 20px; }
+
+.botonDescuento {
+  border-bottom: 0;
+  border: none;
+  width: 100%;
+  transition: all 1s ease-in-out;
+  font-family: 'Roboto Condensed', sans-serif; }
+  .botonDescuento:hover {
+    background-color: rgba(0, 0, 0, 0.787);
+    color: white; }
 
 .anuncioDescuentos {
   grid-area: texto;
-  font-size: 42px; }
+  font-size: 42px;
+  text-align: center; }
 
 .seccionDescuento {
   grid-area: seccion;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around; }
 
-@media (max-width: 1015px) {
-  .anuncioDescuentos {
-    font-size: 38px; }
+@media (max-width: 1100px) {
   .seccionDescuento {
-    height: 80%; }
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+  .anuncioDescuentos {
+    font-size: 28px; }
   .descuentoUno {
-    width: 80%;
-    height: 200px; }
+    margin-bottom: 50px; }
   .descuentoDos {
-    width: 80%;
-    height: 200px; }
+    margin-bottom: 50px; }
   .descuentoTres {
-    height: 200px; }
-  .tituloDescuentos {
-    font-size: 20px; }
-  .btn {
-    font-size: 12px; } }
+    margin-bottom: 50px; } }
 
-@media (max-width: 925px) {
-  .anuncioDescuentos {
-    font-size: 32px; }
-  .seccionDescuento {
-    height: 60%; }
+@media (max-width: 550px) {
   .descuentoUno {
-    width: 60%;
-    height: 150px;
-    margin: 0%; }
+    max-width: 260px;
+    margin-right: 0px; }
   .descuentoDos {
-    width: 60%;
-    height: 150px;
-    margin: 0%; }
+    max-width: 260px;
+    margin-right: 0px; }
   .descuentoTres {
-    width: 60%;
-    height: 150px;
-    margin: 0%; }
-  .tituloDescuentos {
-    font-size: 18px; }
-  .btn {
-    font-size: 12px; } }
+    max-width: 260px;
+    margin-right: 0px; }
+  .anuncioDescuentos {
+    font-size: 20px; } }
 
-@media (max-width: 800px) {
-  .anuncioDescuentos {
-    font-size: 26px; }
-  .seccionDescuento {
-    height: 40%; }
-  .descuentoUno {
-    width: 40%;
-    height: 120px;
+@media (max-width: 1010px) {
+  .contenedorQuienesSomos {
+    margin-bottom: 0px; }
+  .somosRow {
+    width: 70%;
+    height: auto; }
+    .somosRow img {
+      width: 100%; }
+    .somosRow p {
+      margin-bottom: 0%;
+      width: 70%; }
+  .imagenSomos {
     margin: 0%; }
-  .descuentoDos {
-    width: 40%;
-    height: 120px;
-    margin: 0%; }
-  .descuentoTres {
-    width: 40%;
-    height: 120px;
-    margin: 0%; }
-  .tituloDescuentos {
-    font-size: 12px; }
-  .btn {
-    font-size: 9px; }
-  .descuentoImagen {
-    width: 75px;
-    height: 75px; }
-  .descuentoPrecio {
-    font-size: 14px; }
-  .tituloCercana {
-    font-size: 32px; } }
+  .somosRow2 {
+    width: 70%;
+    height: auto; }
+    .somosRow2 p {
+      margin-bottom: 0%;
+      width: 70%;
+      margin-right: 0%; }
+    .somosRow2 .somosRow2 img {
+      width: 100%; } }
 
-@media (max-width: 600px) {
-  .anuncioDescuentos {
-    font-size: 22px; }
-  .seccionDescuento {
-    height: 40%; }
-  .descuentoUno {
-    width: 30%;
-    height: 120px;
-    margin: 0%; }
-  .descuentoDos {
-    width: 30%;
-    height: 120px;
-    margin: 0%; }
-  .descuentoTres {
-    width: 30%;
-    height: 120px;
-    margin: 0%; }
-  .tituloDescuentos {
-    font-size: 10px; }
-  .btn {
-    font-size: 7px; }
-  .descuentoImagen {
-    width: 70px;
-    height: 70px; }
-  .descuentoPrecio {
-    font-size: 12px; }
-  .tituloCercana {
-    font-size: 26px; } }
+@media (max-width: 348px) {
+  .somosRow2 {
+    align-self: flex-start;
+    width: 240px; }
+  .somosRow {
+    width: 240px; } }
+
+@media (max-width: 540px) {
+  .quienSoy_P {
+    margin-left: 30px; } }
+
+@media (max-width: 415px) {
+  .preguntas {
+    margin-left: 0px; } }
